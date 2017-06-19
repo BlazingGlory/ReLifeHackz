@@ -19,12 +19,22 @@ injectTapEventPlugin();
 
 class TaskComponent extends Component {
 
+  constructor(props) {
+    super(props);
+    this.addHabbit = this.addHabbit.bind(this);
+  }
+
+  addHabbit() {
+    habbits.push({id: 5});
+    console.log(habbits)
+  }
+
   render() {
 
     return (
       <div className="taskCompontent flexcontainer">
         <div className="row">
-          <FloatingActionButton className="addTask-btn-style" secondary={true}>
+          <FloatingActionButton className="addTask-btn-style" secondary={true} onClick={this.addHabbit}>
             <ContentAdd />
           </FloatingActionButton>
           <HabbitsList habbits={habbits}/>
