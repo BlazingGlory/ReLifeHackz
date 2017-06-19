@@ -1,0 +1,30 @@
+.flexcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  width: 900px;
+  position: relative;
+}
+
+.taskItem {
+  margin: 10px;
+}
+
+.cardText {
+  width: 80%;
+  text-align: left;
+}
+
+.taskTitle {
+  background-color: green;
+  text-align: left;
+  padding: 4px 16px !important;
+}
+
+.addTask-btn-style {
+  position: relative;
+
+}
